@@ -1,0 +1,70 @@
+pipeline {
+  agent none
+
+  stages {
+    stage('Check Oracle Database') {
+      agent {
+        docker { image 'oracle/database:19.3.0-ee' }
+      }
+      steps {
+        script {
+          try {
+            sh 'sqlplus -v'
+          } catch (Exception e) {
+            error "Oracle is not installed or sqlplus command failed."
+          }
+        }
+      }
+    }
+
+    stage('Back-end') {
+      agent {
+        docker { image 'maven:3.8.1-adoptopenjdk-11' }
+      }
+      steps {
+        script {
+            try {
+                sh 'mvn --version'
+            } catch (Exception e) {
+            error "Back-end Docker image 'maven:3.8.1-adoptopenjdk-11' not found or failed to start."
+          }
+          
+
+        }
+      }
+    }
+
+    stage('Front-end') {
+      agent {
+        docker { image 'node:16-alpine' }
+      }
+      steps {
+        script {
+            try {
+                 sh 'node --version'
+            } catch (Exception e) {
+            error "Front-end Docker image 'node:16-alpine' not found or failed to start."
+          }
+         
+        }
+      }
+    }
+
+  }
+
+  post {
+    success {
+      echo 'Pipeline completed successfully.'
+    }
+    failure {
+      echo 'Pipeline failed.'
+      // Send a Slack notification if the pipeline fails, including the stage where it failed.
+      slackSend (channel: '#your-slack-channel', 
+                 message: "Jenkins pipeline failed in stage *${currentBuild.currentResult}* - *${env.JOB_NAME}* at *${env.BUILD_URL}*.",
+                 color: 'danger')
+    }
+    always {
+      echo 'Cleaning up.'
+    }
+  }
+}
