@@ -16,7 +16,7 @@ This is collection of Jenkins-Kubernetes projects. Where we :
 - Instances(running)
 - Launch instances
 
-<img width="994" alt="Screenshot-1" src="img_1_url">
+<img width="994" alt="Screenshot-1" src="[img_1_url](https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/img%201.png)">
 
 ### Install Jenkins.
 
