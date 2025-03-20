@@ -57,7 +57,7 @@ sudo apt-get install jenkins
 - Security groups
 - Add inbound traffic rules as shown in the image (you can just allow TCP 8080 as well, in my case, I allowed `All traffic`).
 
-<img width="1187" alt="Screenshot-2" src="img_2_url">
+<img width="1187" alt="Screenshot-2" src="https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/img%202.png">
 
 
 ### Login to Jenkins using the below URL:
@@ -72,23 +72,23 @@ After you login to Jenkins,
       - Run the command to copy the Jenkins Admin Password - `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
       - Enter the Administrator password
       
-<img width="1291" alt="Screenshot-3" src="img_3_url">
+<img width="1291" alt="Screenshot-3" src="https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/img%203.png">
 
 ### Click on Install suggested plugins
 
-<img width="1291" alt="Screenshot-4" src="img_4_url">
+<img width="1291" alt="Screenshot-4" src="https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/img%204.png">
 
 Wait for the Jenkins to Install suggested plugins
 
-<img width="1291" alt="Screenshot-5" src="img_5_url">
+<img width="1291" alt="Screenshot-5" src="https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/img%205.png">
 
 Create First Admin User or Skip the step [If you want to use this Jenkins instance for future use-cases as well, better to create admin user]
 
-<img width="990" alt="Screenshot-6" src="img_6_url">
+<img width="990" alt="Screenshot-6" src="https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/img%206.png">
 
 Jenkins Installation is Successful. You can now starting using the Jenkins 
 
-<img width="990" alt="Screenshot-7" src="img_7_url">
+<img width="990" alt="Screenshot-7" src="https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/img%207.png">
 
 ## Install the Docker Pipeline plugin in Jenkins:
 
@@ -98,7 +98,7 @@ Jenkins Installation is Successful. You can now starting using the Jenkins
    - Select the plugin and click the Install button.
    - Restart Jenkins after the plugin is installed.
    
-<img width="1392" alt="Screenshot-8" src="img_8_url">
+<img width="1392" alt="Screenshot-8" src="https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/img%208.png">
 
 Wait for the Jenkins to be restarted.
 
