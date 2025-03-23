@@ -3,7 +3,7 @@
 # Python-Jenkins-ArgoCD-K8s: Orchestrating CI/CD on Kubernetes
 
 # 🍁 Introduction
-Welcome to the Python-Jenkins-ArgoCD-K8s project! This repository provides a hands-on approach to implementing a modern CI/CD pipeline using Python, Jenkins, and ArgoCD on a Kubernetes cluster. 
+Welcome to the Python-Jenkins-ArgoCD-K8s project! This repository provides a hands-on approach to implementing a modern CI/CD pipeline using Python, Jenkins, and ArgoCD on a Kubernetes cluster. By following this guide, you'll see practical insights into deploying robust and scalable applications with efficient automation and deployment strategies.
 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
@@ -11,7 +11,7 @@ Welcome to the Python-Jenkins-ArgoCD-K8s project! This repository provides a han
         [![Medium](https://img.shields.io/badge/Medium-Writeups-black)](https://medium.com/@nikhil-c)    
 
 
-By following this guide, you'll see practical insights into deploying robust and scalable applications with efficient automation and deployment strategies.
+
 
  
 
