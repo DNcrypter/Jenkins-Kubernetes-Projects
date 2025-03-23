@@ -30,7 +30,8 @@ Welcome to the Python-Jenkins-ArgoCD-K8s project! This repository provides a han
 Follow these steps to set up the project:
 #### 1. Clone the Repository:
 ```bash
-
+git clone https://github.com/DNcrypter/Jenkins-Kubernetes-Projects.git
+cd Jenkins-Kubernetes-Projects/python-jenkins-argocd-k8s
 ```
 #### 2. Set Up Jenkins:
 - Install Jenkins as a Docker container or on your local machine.
