@@ -63,11 +63,11 @@ kubectl get services
 # django-todo
 A simple todo app built with django
 
-![todo App](img_1)
+![todo App](https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/todoApp/img%201.png)
 
 ## CICD Architecture [GitHub -> Jenkins -> k8s Manifests -> Argo CD -> k8s cluster]
 
-![img 2](img_2)
+![img 2](https://github.com/DNcrypter/Jenkins-Kubernetes-Projects/blob/main/Images/todoApp/img%202.png)
 
 
 
